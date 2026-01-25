@@ -1,0 +1,21 @@
+{
+  "id": "007-crud-doctors",
+  "title": "CRUD de Profissionais de Saúde",
+  "description": "Cadastro completo de profissionais de saúde (médicos, nutricionistas, fisioterapeutas, etc.) que atendem o usuário.",
+  "category": "cadastros",
+  "priority": "high",
+  "status": "backlog",
+  "acceptanceCriteria": [
+    "API: GET/POST/PUT/DELETE /api/doctors",
+    "Campos: Nome, Especialidade, RegistroProfissional (CRM/CRN/etc), Clinica, Contato",
+    "Frontend: Listagem de profissionais com busca/filtro",
+    "Frontend: Formulário de cadastro/edição",
+    "Frontend: Confirmação de exclusão",
+    "Validações no backend e frontend",
+    "Dados isolados por usuário (multi-tenant)"
+  ],
+  "technicalNotes": "Especialidade como enum ou tabela auxiliar. Registro profissional com máscara por tipo.",
+  "estimatedComplexity": "medium",
+  "dependencies": ["005-auth-google-sso"],
+  "createdAt": "2025-01-25T16:30:00Z"
+}

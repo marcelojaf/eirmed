@@ -1,0 +1,21 @@
+{
+  "id": "011-crud-prescriptions",
+  "title": "CRUD de Prescrições",
+  "description": "Registro de prescrições médicas vinculando medicamentos a consultas, com período de uso e médico prescritor.",
+  "category": "farmacia",
+  "priority": "medium",
+  "status": "backlog",
+  "acceptanceCriteria": [
+    "API: GET/POST/PUT/DELETE /api/prescriptions",
+    "Campos: MedicationId, AppointmentId, DoctorId, DataInicio, DataFim, Posologia, MotivoUso, Observacoes",
+    "Relacionamento com Medication, Appointment e Doctor",
+    "Frontend: Listagem de prescrições ativas e histórico",
+    "Frontend: Formulário de cadastro vinculado a consulta",
+    "Frontend: Visualização de prescrições por medicamento",
+    "Indicador de prescrição ativa vs encerrada"
+  ],
+  "technicalNotes": "Posologia como texto livre (ex: '1 comprimido a cada 8h'). DataFim null = uso contínuo.",
+  "estimatedComplexity": "medium",
+  "dependencies": ["008-crud-appointments", "010-crud-medications"],
+  "createdAt": "2025-01-25T16:30:00Z"
+}

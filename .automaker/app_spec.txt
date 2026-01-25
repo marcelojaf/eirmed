@@ -1,0 +1,42 @@
+<project_specification>
+  <project_name>EirMed</project_name>
+
+  <overview>
+    Sistema pessoal de controle de ficha médica que centraliza todas as informações
+    de saúde do usuário em um único lugar. Permite organizar e apresentar rapidamente
+    o histórico médico completo ao visitar diferentes profissionais de saúde.
+  </overview>
+
+  <technology_stack>
+    <backend>
+      <framework>ASP.NET Web API (.NET 8)</framework>
+      <orm>Entity Framework Core</orm>
+      <database>PostgreSQL</database>
+      <authentication>ASP.NET Identity + Google SSO</authentication>
+    </backend>
+    <frontend>
+      <framework>Next.js 14+ (App Router)</framework>
+      <styling>Tailwind CSS</styling>
+      <language>TypeScript</language>
+    </frontend>
+    <storage>
+      <phase1>Local File System</phase1>
+      <phase2>Azure Blob Storage</phase2>
+    </storage>
+    <structure>Monorepo</structure>
+  </technology_stack>
+
+  <core_capabilities>
+    <capability>Cadastro de Profissionais de Saúde</capability>
+    <capability>Registro de Consultas Médicas</capability>
+    <capability>Centralização de Exames</capability>
+    <capability>Controle de Medicamentos (Farmacinha Pessoal)</capability>
+    <capability>Linha do Tempo Médica Unificada</capability>
+    <capability>Upload e Armazenamento de Arquivos</capability>
+    <capability>Autenticação Multi-usuário com Google SSO</capability>
+  </core_capabilities>
+
+  <implemented_features>
+    <!-- Nenhuma feature implementada ainda -->
+  </implemented_features>
+</project_specification>

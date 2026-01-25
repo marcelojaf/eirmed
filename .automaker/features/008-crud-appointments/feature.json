@@ -1,0 +1,21 @@
+{
+  "id": "008-crud-appointments",
+  "title": "CRUD de Consultas Médicas",
+  "description": "Registro detalhado de cada consulta/atendimento realizado, incluindo queixa principal, diagnósticos e observações.",
+  "category": "cadastros",
+  "priority": "high",
+  "status": "backlog",
+  "acceptanceCriteria": [
+    "API: GET/POST/PUT/DELETE /api/appointments",
+    "Campos: Data, DoctorId, QueixaPrincipal, Diagnosticos, Observacoes",
+    "Relacionamento com Doctor (profissional que atendeu)",
+    "Frontend: Listagem de consultas ordenada por data",
+    "Frontend: Formulário de cadastro/edição com seleção de médico",
+    "Frontend: Visualização detalhada da consulta",
+    "Filtros por período, médico e especialidade"
+  ],
+  "technicalNotes": "Diagnósticos como lista de strings ou entidade separada. Considerar campo para anexos (futura integração).",
+  "estimatedComplexity": "medium",
+  "dependencies": ["007-crud-doctors"],
+  "createdAt": "2025-01-25T16:30:00Z"
+}
