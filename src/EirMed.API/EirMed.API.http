@@ -1,0 +1,6 @@
+@EirMed.API_HostAddress = http://localhost:5197
+
+GET {{EirMed.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

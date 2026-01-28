@@ -1,0 +1,10 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/EirMed.API/EirMed.API.csproj" />
+    <Project Path="src/EirMed.Domain/EirMed.Domain.csproj" />
+    <Project Path="src/EirMed.Infrastructure/EirMed.Infrastructure.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/EirMed.Tests/EirMed.Tests.csproj" />
+  </Folder>
+</Solution>
