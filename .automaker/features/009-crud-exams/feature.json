@@ -4,7 +4,7 @@
   "description": "Centralização de todos os exames realizados com suporte a diferentes tipos (sangue, imagem, funcional) e anexo de resultados.",
   "category": "cadastros",
   "priority": "high",
-  "status": "backlog",
+  "status": "verified",
   "acceptanceCriteria": [
     "API: GET/POST/PUT/DELETE /api/exams",
     "Campos: Nome, Tipo, DataRealizacao, DataResultado, Laboratorio, DoctorId (solicitante), Resultados, FileUrl",
@@ -17,6 +17,7 @@
   ],
   "technicalNotes": "Resultados como JSON para flexibilidade. Preparar campo FileUrl para integração com upload.",
   "estimatedComplexity": "high",
-  "dependencies": ["007-crud-doctors", "008-crud-appointments"],
-  "createdAt": "2025-01-25T16:30:00Z"
+  "createdAt": "2025-01-25T16:30:00Z",
+  "descriptionHistory": [],
+  "updatedAt": "2026-01-28T12:52:23.334Z"
 }

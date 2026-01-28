@@ -4,7 +4,7 @@
   "description": "Implementar autenticação multi-usuário utilizando Google OAuth 2.0 / OpenID Connect. Configurar ASP.NET Identity e JWT para sessões.",
   "category": "auth",
   "priority": "high",
-  "status": "backlog",
+  "status": "verified",
   "acceptanceCriteria": [
     "Login com Google funcionando",
     "Usuário criado automaticamente no primeiro login",
@@ -17,6 +17,9 @@
   ],
   "technicalNotes": "Usar Microsoft.AspNetCore.Authentication.Google. Armazenar tokens de forma segura. Implementar middleware de autenticação.",
   "estimatedComplexity": "high",
-  "dependencies": ["002-setup-backend", "003-setup-frontend", "004-setup-database"],
-  "createdAt": "2025-01-25T16:30:00Z"
+  "createdAt": "2025-01-25T16:30:00Z",
+  "startedAt": "2026-01-28T11:42:12.942Z",
+  "completedAt": "2026-01-28T12:30:00.000Z",
+  "descriptionHistory": [],
+  "updatedAt": "2026-01-28T12:10:19.279Z"
 }

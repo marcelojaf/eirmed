@@ -15,15 +15,35 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
             .IsRequired()
             .HasMaxLength(200);
 
-        builder.Property(u => u.DataNascimento)
-            .IsRequired();
+        builder.Property(u => u.Email)
+            .IsRequired()
+            .HasMaxLength(256);
+
+        builder.HasIndex(u => u.Email)
+            .IsUnique();
+
+        builder.Property(u => u.GoogleId)
+            .HasMaxLength(100);
+
+        builder.HasIndex(u => u.GoogleId)
+            .IsUnique()
+            .HasFilter("\"GoogleId\" IS NOT NULL");
+
+        builder.Property(u => u.ProfilePictureUrl)
+            .HasMaxLength(500);
 
         builder.Property(u => u.TipoSanguineo)
             .HasConversion<string>()
             .HasMaxLength(20);
 
+        builder.Property(u => u.Alergias)
+            .HasMaxLength(1000);
+
         builder.Property(u => u.ObservacoesGerais)
             .HasMaxLength(2000);
+
+        builder.Property(u => u.IsActive)
+            .HasDefaultValue(true);
 
         builder.Property(u => u.CreatedAt).IsRequired();
 
@@ -35,6 +55,11 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
         builder.HasMany(u => u.Medications)
             .WithOne(m => m.User)
             .HasForeignKey(m => m.UserId)
+            .OnDelete(DeleteBehavior.Cascade);
+
+        builder.HasMany(u => u.RefreshTokens)
+            .WithOne(rt => rt.User)
+            .HasForeignKey(rt => rt.UserId)
             .OnDelete(DeleteBehavior.Cascade);
     }
 }

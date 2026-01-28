@@ -4,7 +4,7 @@
   "description": "Criar projeto Next.js 14+ com App Router, TypeScript e Tailwind CSS. Configurar estrutura de componentes e páginas.",
   "category": "infra",
   "priority": "high",
-  "status": "verified",
+  "status": "completed",
   "acceptanceCriteria": [
     "Projeto Next.js 14+ criado em /web",
     "TypeScript configurado",

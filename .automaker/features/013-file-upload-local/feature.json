@@ -4,7 +4,7 @@
   "description": "Implementar upload e download de arquivos (receitas, resultados de exames, relatórios) com armazenamento local. Preparado para migração futura para Azure Blob.",
   "category": "storage",
   "priority": "medium",
-  "status": "backlog",
+  "status": "verified",
   "acceptanceCriteria": [
     "API: POST /api/files/upload (multipart/form-data)",
     "API: GET /api/files/{id} (download)",
@@ -20,6 +20,7 @@
   ],
   "technicalNotes": "Criar interface IFileStorageService com implementação LocalFileStorage. Gerar nomes únicos (GUID). Armazenar metadados no banco.",
   "estimatedComplexity": "medium",
-  "dependencies": ["002-setup-backend", "009-crud-exams"],
-  "createdAt": "2025-01-25T16:30:00Z"
+  "createdAt": "2025-01-25T16:30:00Z",
+  "descriptionHistory": [],
+  "updatedAt": "2026-01-28T13:35:30.069Z"
 }

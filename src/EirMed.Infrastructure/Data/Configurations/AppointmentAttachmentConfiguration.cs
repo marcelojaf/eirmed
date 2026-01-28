@@ -19,8 +19,15 @@ public class AppointmentAttachmentConfiguration : IEntityTypeConfiguration<Appoi
             .IsRequired()
             .HasMaxLength(500);
 
+        builder.Property(a => a.StoragePath)
+            .IsRequired()
+            .HasMaxLength(500);
+
         builder.Property(a => a.ContentType)
             .HasMaxLength(100);
+
+        builder.Property(a => a.FileSizeBytes)
+            .IsRequired();
 
         builder.Property(a => a.CreatedAt).IsRequired();
 

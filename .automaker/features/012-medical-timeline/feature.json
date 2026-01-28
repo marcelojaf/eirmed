@@ -4,7 +4,7 @@
   "description": "Visualização cronológica unificada de todo o histórico médico: consultas, exames, diagnósticos e medicamentos. Ideal para apresentação rápida durante consultas.",
   "category": "timeline",
   "priority": "high",
-  "status": "backlog",
+  "status": "verified",
   "acceptanceCriteria": [
     "API: GET /api/timeline com filtros de período e tipo",
     "Unificar dados de: Appointments, Exams, Prescriptions",
@@ -18,6 +18,7 @@
   ],
   "technicalNotes": "Criar DTO unificado TimelineEvent. Considerar paginação para históricos longos. Lazy loading de detalhes.",
   "estimatedComplexity": "high",
-  "dependencies": ["008-crud-appointments", "009-crud-exams", "011-crud-prescriptions"],
-  "createdAt": "2025-01-25T16:30:00Z"
+  "createdAt": "2025-01-25T16:30:00Z",
+  "descriptionHistory": [],
+  "updatedAt": "2026-01-28T13:23:22.392Z"
 }

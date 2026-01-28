@@ -4,7 +4,7 @@
   "description": "Registro de prescrições médicas vinculando medicamentos a consultas, com período de uso e médico prescritor.",
   "category": "farmacia",
   "priority": "medium",
-  "status": "backlog",
+  "status": "verified",
   "acceptanceCriteria": [
     "API: GET/POST/PUT/DELETE /api/prescriptions",
     "Campos: MedicationId, AppointmentId, DoctorId, DataInicio, DataFim, Posologia, MotivoUso, Observacoes",
@@ -16,6 +16,7 @@
   ],
   "technicalNotes": "Posologia como texto livre (ex: '1 comprimido a cada 8h'). DataFim null = uso contínuo.",
   "estimatedComplexity": "medium",
-  "dependencies": ["008-crud-appointments", "010-crud-medications"],
-  "createdAt": "2025-01-25T16:30:00Z"
+  "createdAt": "2025-01-25T16:30:00Z",
+  "descriptionHistory": [],
+  "updatedAt": "2026-01-28T13:14:01.939Z"
 }

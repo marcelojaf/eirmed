@@ -5,6 +5,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddInfrastructure(builder.Configuration);
+builder.Services.AddControllers();
 
 var allowedOrigins = builder.Configuration
     .GetSection("Cors:AllowedOrigins")
@@ -31,7 +32,31 @@ app.UseGlobalExceptionHandler();
 app.UseCors();
 app.UseHttpsRedirection();
 
+app.UseAuthentication();
+app.UseAuthorization();
+
+app.MapControllers();
+
 app.MapGet("/health", () => Results.Ok(new { status = "healthy", timestamp = DateTime.UtcNow }));
+
+app.MapGet("/protected-test", (System.Security.Claims.ClaimsPrincipal user) =>
+{
+    var userId = user.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value
+        ?? user.FindFirst("sub")?.Value;
+    var email = user.FindFirst(System.Security.Claims.ClaimTypes.Email)?.Value
+        ?? user.FindFirst("email")?.Value;
+    var name = user.FindFirst(System.Security.Claims.ClaimTypes.Name)?.Value
+        ?? user.FindFirst("name")?.Value;
+
+    return Results.Ok(new
+    {
+        message = "Acesso autorizado!",
+        userId,
+        email,
+        name,
+        timestamp = DateTime.UtcNow
+    });
+}).RequireAuthorization();
 
 if (app.Environment.IsDevelopment())
 {

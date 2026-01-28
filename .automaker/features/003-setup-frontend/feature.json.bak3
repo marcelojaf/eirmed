@@ -4,7 +4,7 @@
   "description": "Criar projeto Next.js 14+ com App Router, TypeScript e Tailwind CSS. Configurar estrutura de componentes e páginas.",
   "category": "infra",
   "priority": "high",
-  "status": "backlog",
+  "status": "in_progress",
   "acceptanceCriteria": [
     "Projeto Next.js 14+ criado em /web",
     "TypeScript configurado",
@@ -16,6 +16,10 @@
   ],
   "technicalNotes": "Usar App Router (não Pages Router). Configurar path aliases (@/).",
   "estimatedComplexity": "medium",
-  "dependencies": ["001-setup-monorepo"],
-  "createdAt": "2025-01-25T16:30:00Z"
+  "dependencies": [
+    "001-setup-monorepo"
+  ],
+  "createdAt": "2025-01-25T16:30:00Z",
+  "startedAt": "2026-01-25T19:29:06.739Z",
+  "descriptionHistory": []
 }

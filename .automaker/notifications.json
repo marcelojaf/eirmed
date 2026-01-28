@@ -1,4 +1,115 @@
 {
   "version": 1,
-  "notifications": []
+  "notifications": [
+    {
+      "id": "f1ec13e9-5b64-4727-adc0-32331982354e",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"004-setup-database\" has been verified and is complete.",
+      "createdAt": "2026-01-28T11:57:39.934Z",
+      "read": true,
+      "dismissed": false,
+      "featureId": "004-setup-database",
+      "projectPath": "C:\\dev/eir-med"
+    },
+    {
+      "id": "e76de825-098e-4121-a2c0-844b2f07905e",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"005-auth-google-sso\" has been verified and is complete.",
+      "createdAt": "2026-01-28T12:10:19.282Z",
+      "read": true,
+      "dismissed": false,
+      "featureId": "005-auth-google-sso",
+      "projectPath": "C:\\dev/eir-med"
+    },
+    {
+      "id": "d772b63e-0975-4298-8201-ab5e41d7b4b7",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"006-user-profile\" has been verified and is complete.",
+      "createdAt": "2026-01-28T12:27:09.835Z",
+      "read": true,
+      "dismissed": false,
+      "featureId": "006-user-profile",
+      "projectPath": "C:\\dev/eir-med"
+    },
+    {
+      "id": "e72a73c1-dc16-4b8c-8ea0-d57b83870c71",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"007-crud-doctors\" has been verified and is complete.",
+      "createdAt": "2026-01-28T12:35:58.130Z",
+      "read": true,
+      "dismissed": false,
+      "featureId": "007-crud-doctors",
+      "projectPath": "C:\\dev/eir-med"
+    },
+    {
+      "id": "b92c5d57-5e7c-4223-bcd5-abd864a2345d",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"008-crud-appointments\" has been verified and is complete.",
+      "createdAt": "2026-01-28T12:44:28.935Z",
+      "read": true,
+      "dismissed": false,
+      "featureId": "008-crud-appointments",
+      "projectPath": "C:\\dev/eir-med"
+    },
+    {
+      "id": "b829a73d-d4f1-40a5-903a-ab8e14436f33",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"009-crud-exams\" has been verified and is complete.",
+      "createdAt": "2026-01-28T12:52:23.336Z",
+      "read": true,
+      "dismissed": false,
+      "featureId": "009-crud-exams",
+      "projectPath": "C:\\dev/eir-med"
+    },
+    {
+      "id": "262b945b-6e46-4e5f-a9ec-507e6c375764",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"010-crud-medications\" has been verified and is complete.",
+      "createdAt": "2026-01-28T13:01:56.401Z",
+      "read": true,
+      "dismissed": false,
+      "featureId": "010-crud-medications",
+      "projectPath": "C:\\dev/eir-med"
+    },
+    {
+      "id": "38867d93-a68a-4cf1-9b78-af783a520738",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"011-crud-prescriptions\" has been verified and is complete.",
+      "createdAt": "2026-01-28T13:14:01.942Z",
+      "read": true,
+      "dismissed": false,
+      "featureId": "011-crud-prescriptions",
+      "projectPath": "C:\\dev/eir-med"
+    },
+    {
+      "id": "682058d8-03cb-4f27-ab20-2d4470a0f040",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"012-medical-timeline\" has been verified and is complete.",
+      "createdAt": "2026-01-28T13:23:22.394Z",
+      "read": true,
+      "dismissed": false,
+      "featureId": "012-medical-timeline",
+      "projectPath": "C:\\dev/eir-med"
+    },
+    {
+      "id": "fe406e66-0e2a-4d26-8445-a9c752b11762",
+      "type": "feature_verified",
+      "title": "Feature Verified",
+      "message": "\"013-file-upload-local\" has been verified and is complete.",
+      "createdAt": "2026-01-28T13:35:30.072Z",
+      "read": true,
+      "dismissed": false,
+      "featureId": "013-file-upload-local",
+      "projectPath": "C:\\dev/eir-med"
+    }
+  ]
 }

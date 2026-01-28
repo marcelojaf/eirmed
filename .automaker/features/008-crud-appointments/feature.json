@@ -4,7 +4,7 @@
   "description": "Registro detalhado de cada consulta/atendimento realizado, incluindo queixa principal, diagnósticos e observações.",
   "category": "cadastros",
   "priority": "high",
-  "status": "backlog",
+  "status": "verified",
   "acceptanceCriteria": [
     "API: GET/POST/PUT/DELETE /api/appointments",
     "Campos: Data, DoctorId, QueixaPrincipal, Diagnosticos, Observacoes",
@@ -16,6 +16,7 @@
   ],
   "technicalNotes": "Diagnósticos como lista de strings ou entidade separada. Considerar campo para anexos (futura integração).",
   "estimatedComplexity": "medium",
-  "dependencies": ["007-crud-doctors"],
-  "createdAt": "2025-01-25T16:30:00Z"
+  "createdAt": "2025-01-25T16:30:00Z",
+  "descriptionHistory": [],
+  "updatedAt": "2026-01-28T12:44:28.933Z"
 }

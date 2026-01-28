@@ -4,7 +4,7 @@
   "description": "Configurar conexão com PostgreSQL, criar DbContext, configurar migrations e criar entidades base do domínio.",
   "category": "infra",
   "priority": "high",
-  "status": "backlog",
+  "status": "verified",
   "acceptanceCriteria": [
     "Connection string configurada (appsettings.json)",
     "DbContext criado e configurado",
@@ -15,6 +15,8 @@
   ],
   "technicalNotes": "Usar Npgsql como provider. Configurar para Docker local em desenvolvimento.",
   "estimatedComplexity": "medium",
-  "dependencies": ["002-setup-backend"],
-  "createdAt": "2025-01-25T16:30:00Z"
+  "createdAt": "2025-01-25T16:30:00Z",
+  "startedAt": "2026-01-28T11:42:10.340Z",
+  "descriptionHistory": [],
+  "updatedAt": "2026-01-28T11:57:39.932Z"
 }

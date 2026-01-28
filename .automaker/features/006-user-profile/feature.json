@@ -4,7 +4,7 @@
   "description": "CRUD do perfil do usuário com dados pessoais e informações médicas básicas (tipo sanguíneo, alergias, observações gerais).",
   "category": "cadastros",
   "priority": "high",
-  "status": "backlog",
+  "status": "verified",
   "acceptanceCriteria": [
     "API: GET/PUT /api/users/profile",
     "Campos: Nome, DataNascimento, TipoSanguineo, Alergias, ObservacoesGerais",
@@ -15,6 +15,7 @@
   ],
   "technicalNotes": "Tipo sanguíneo como enum. Alergias como lista de strings. Multi-tenant por UserId.",
   "estimatedComplexity": "medium",
-  "dependencies": ["005-auth-google-sso"],
-  "createdAt": "2025-01-25T16:30:00Z"
+  "createdAt": "2025-01-25T16:30:00Z",
+  "descriptionHistory": [],
+  "updatedAt": "2026-01-28T12:27:09.833Z"
 }

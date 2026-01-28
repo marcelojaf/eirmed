@@ -10,6 +10,7 @@ public class EirMedDbContext : DbContext
     }
 
     public DbSet<User> Users => Set<User>();
+    public DbSet<RefreshToken> RefreshTokens => Set<RefreshToken>();
     public DbSet<Doctor> Doctors => Set<Doctor>();
     public DbSet<Appointment> Appointments => Set<Appointment>();
     public DbSet<Exam> Exams => Set<Exam>();

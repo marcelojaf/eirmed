@@ -4,7 +4,7 @@
   "description": "Criar estrutura inicial do monorepo com pastas para backend (API) e frontend (web). Configurar workspace e scripts compartilhados.",
   "category": "infra",
   "priority": "high",
-  "status": "verified",
+  "status": "completed",
   "acceptanceCriteria": [
     "Pasta /api criada para o backend ASP.NET",
     "Pasta /web criada para o frontend Next.js",
