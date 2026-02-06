@@ -1,5 +1,5 @@
 @echo off
-cd /d C:\dev\eir-med
+cd /d %~dp0
 set ProgramData=C:\ProgramData
 set APPDATA=C:\Users\marce\AppData\Roaming
 set LOCALAPPDATA=C:\Users\marce\AppData\Local

@@ -22,7 +22,7 @@ Este guia descreve como configurar a autenticação Google SSO para o projeto Ei
 
 ### 2. Configurar o Backend
 
-Edite o arquivo `src/EirMed.API/appsettings.Development.json`:
+Edite o arquivo `backend/src/EirMed.API/appsettings.Development.json`:
 
 ```json
 {
@@ -35,7 +35,7 @@ Edite o arquivo `src/EirMed.API/appsettings.Development.json`:
 
 ### 3. Configurar o Frontend
 
-Edite o arquivo `web/.env.local`:
+Edite o arquivo `frontend/.env.local`:
 
 ```
 NEXT_PUBLIC_API_URL=http://localhost:5000
@@ -45,7 +45,7 @@ NEXT_PUBLIC_GOOGLE_CLIENT_ID=SEU_GOOGLE_CLIENT_ID
 ### 4. Executar as Migrations
 
 ```bash
-cd src/EirMed.API
+cd backend/src/EirMed.API
 dotnet ef database update
 ```
 
@@ -53,13 +53,13 @@ dotnet ef database update
 
 **Terminal 1 - Backend:**
 ```bash
-cd src/EirMed.API
+cd backend/src/EirMed.API
 dotnet run
 ```
 
 **Terminal 2 - Frontend:**
 ```bash
-cd web
+cd frontend
 npm run dev
 ```
 

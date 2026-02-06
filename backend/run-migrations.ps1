@@ -1,5 +1,5 @@
 $ErrorActionPreference = "Continue"
-Set-Location "C:\dev\eir-med"
+Set-Location $PSScriptRoot
 $env:Path = "C:\Users\marce\.dotnet\tools;C:\Program Files\dotnet;$env:Path"
 $dotnetEf = "C:\Users\marce\.dotnet\tools\dotnet-ef.exe"
 
