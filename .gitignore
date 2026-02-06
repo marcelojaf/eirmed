@@ -134,3 +134,4 @@ desktop.ini
 *.temp
 *.bak
 *.cache
+.claude/
